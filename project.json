@@ -1,0 +1,71 @@
+{
+  "name": "lunchtime-react",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/lunchtime-react"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "lunchtime-react:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "lunchtime-react:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "lunchtime-react:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "lunchtime-react:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "lunchtime-react:build:development"
+        },
+        "production": {
+          "buildTarget": "lunchtime-react:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "coverage/lunchtime-react"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./src"]
+      }
+    }
+  },
+  "tags": []
+}
