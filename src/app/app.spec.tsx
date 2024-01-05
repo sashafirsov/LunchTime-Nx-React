@@ -10,6 +10,7 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
+    // noinspection TypeScriptValidateTypes
     expect(getByText(/Welcome lunchtime-react/gi)).toBeTruthy();
   });
 });
