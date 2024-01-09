@@ -4,10 +4,12 @@ import styles from './app.module.scss';
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import LunchPlanner from '../LunchPlanner';
 
 export function App() {
   return (
     <div>
+      <LunchPlanner/>
       {/*<NxWelcome title="lunch-together" />*/}
       <div className="card">
         <h1>Is it real app? </h1>
