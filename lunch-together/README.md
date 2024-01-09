@@ -23,6 +23,8 @@ The group generating algorithm should prioritize people you haven't had lunch wi
 * Group list 
 * Available for selection list
 * data for list, ordered by number of common lunches  
-* list to display images of pokemon with name
+* lunches list in `localStorage`
+* list to display images of pokemon with name from GraphQl db
 
 
+![Screenshot](./public/Screenshot.png)

@@ -10756,6 +10756,11 @@ use-sidecar@^1.1.2:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
 
+usehooks-ts@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.9.2.tgz#56ff2c3941195505efe6fc17fb57015e2a712576"
+  integrity sha512-fOzPeG01rs51CGYzqgioP/zs9v1Cgpe+zcXeqJPlDHYfdfG/wjsdjBWHJi+Ph1JgQAGUrDo5sJbPlaZd+Z9lxw==
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
