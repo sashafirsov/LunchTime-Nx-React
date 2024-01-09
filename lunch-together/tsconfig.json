@@ -15,15 +15,7 @@
     },
     {
       "path": "./tsconfig.spec.json"
-    },
-    {
-      "path": "./tsconfig.storybook.json"
     }
   ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
-  "extends": "./tsconfig.base.json"
+  "extends": "../tsconfig.base.json"
 }

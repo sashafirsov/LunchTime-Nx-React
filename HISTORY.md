@@ -1,3 +1,5 @@
+# generated lunch-together
+    nx g app lunch-together --routing --bundler=vite --unitTestRunner=vitest --linter=eslint --e2eTestRunner=playwright --compiler=swc 
 # StoryBook
     nx g @nx/storybook:configuration lunchtime-react uiFramework=@storybook/react-vite
     nx g @nx/react:storybook-configuration lunchtime-react
