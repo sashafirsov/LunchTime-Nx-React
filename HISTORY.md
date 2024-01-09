@@ -1,3 +1,5 @@
+# generated LunchPlanner component
+    nx g c  LunchPlanner --directory=lunch-together/src --export=false --nameAndDirectoryFormat=as-provided 
 # generated lunch-together
     nx g app lunch-together --routing --bundler=vite --unitTestRunner=vitest --linter=eslint --e2eTestRunner=playwright --compiler=swc 
 # StoryBook
